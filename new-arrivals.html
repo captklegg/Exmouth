@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ye Olde Bookshop | New Arrivals</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS code -->
+		<link rel="stylesheet" href="css/stylesheet.css">
+		
+		<!-- Meta tags generated at https://www.seoptimer.com/meta-tag-generator -->
+		<meta name="title" content="Ye Olde Booshop">
+		<meta name="description" content="Ye Olde Bookshop is an independently owned bookshop in Christchurch. Specialists in rare and first edition books, and book restorations.">
+		<meta name="keywords" content="used books, old books, first edition books, rare books, book restorations, christchurch, new zealand, book of the month, classic books,independent bookshop, book valuations">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="revisit-after" content="30 days">
+		<meta name="author" content="Pizzaz Web Design">
+		
+		<!-- Favicons generated at https://favicon.io/favicon-converter/ -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/site.webmanifest">  
+
+		<!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+		<script src="js/topnav.js"></script>		
+	</head>
+
+	<body>
+		<!-- Responsive nav menu from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="nav-link">Home</a>
+				<a href="new-arrivals.html" class="nav-link active">New Arrivals</a>
+				<a href="book-of-the-month.html" class="nav-link">Book of the Month</a> 
+				<a href="showcase.html" class="nav-link">Showcase</a> 			            
+				<a href="restorations.html" class="nav-link">Restorations</a>
+				<a href="valuations.html" class="nav-link">Valuations</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+				<a href="about.html" class="nav-link">About Us</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Menu button">&#9776;</a>
+			</div>
+		</nav>    
+		
+		<header>
+			<div class="row">
+				<div id="header-search">
+					<input type="text" class="search-input" placeholder="Search..." aria-label="Search this website">
+				</div>
+				<div id="header-logo">
+					<div id="logo">
+						<figure>
+							<img src="images/YeOldeBookshop.png" alt="Ye Olde Bookshop">
+						</figure>
+					</div>
+				</div>
+				<div id="header-social">
+					<div class="social-icon">						
+						<a href="#" aria-label="Youtube link"><img src="images/icons/youtube.png" alt="Youtube"></a>
+					</div>
+					<div class="social-icon">						
+						<a href="#" aria-label="Instagram link"><img src="images/icons/instagram.png" alt="Instagram"></a>
+					</div>
+					<div class="social-icon">						
+						<a href="#" aria-label="Twitter link"><img src="images/icons/twitter.png" alt="Twitter"></a>
+					</div>			
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="item">
+				<h1>New Arrivals</h1>
+				<div id="fancy">
+					<img src="images/fancy-divider.png" alt="divider">
+				</div>
+			</div>
+			<div class="item">
+				<p>Browse a selection of used books that have just come in. If you see something you like, please drop by or <a href="contact.html" title="Contact us">contact us</a>.</p>
+			</div>
+			
+			<div class="divider div-transparent"></div>
+			
+			<div id="filterContainer">
+				<div class="arrivals-container">
+					<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+					<button class="btn" onclick="filterSelection('adventure')"> Adventure</button>
+					<button class="btn" onclick="filterSelection('children')"> Children</button>
+					<button class="btn" onclick="filterSelection('classics')"> Classics</button>
+					<button class="btn" onclick="filterSelection('crime')"> Crime</button>
+				</div>
+				<div class="arrivals-container">
+					<button class="btn" onclick="filterSelection('humour')"> Humour</button>
+					<button class="btn" onclick="filterSelection('NZ-authors')"> New Zealand</button>
+					<button class="btn" onclick="filterSelection('sf')"> Science Fiction</button>
+					<button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+					<button class="btn" onclick="filterSelection('women')"> Women Authors</button>
+				</div>
+				
+			</div>
+			<div class="dash"></div>
+			<div class="arrivals-container">
+				<!-- Filter script code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements -->
+				<div class="filterDiv classics">
+					<img class="book-cover" src="images/books/other/machiavelli.webp" alt="The New Machiavelli">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/franky.webp" alt="Frankenstein">
+				</div>
+				<div class="filterDiv NZ-authors women">
+					<img class="book-cover" src="images/books/women/died-in-the-wool.webp" alt="Died in the Wool">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/wonky-donkey.webp" alt="The Wonky Donkey">
+				</div>
+				<div class="filterDiv horror">
+					<img class="book-cover" src="images/books/other/salems.webp" alt="Salem's Lot">
+				</div>
+				<div class="filterDiv adventure">
+					<img class="book-cover" src="images/books/other/syn.webp" alt="Doctor Syn">
+				</div>
+				<div class="filterDiv sf">
+					<img class="book-cover" src="images/books/other/foundations-edge.webp" alt="Foundations Edge">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/cat-in-the-hat.webp" alt="The Cat in the Hat">
+				</div>
+				<div class="filterDiv crime">
+					<img class="book-cover" src="images/books/other/bunker.webp" alt="No Beast So Fierce">
+				</div>
+				<div class="filterDiv horror">
+					<img class="book-cover" src="images/books/other/jaws.webp" alt="Jaws">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/goldfinch.webp" alt="Goldfinch">
+				</div>
+				<div class="filterDiv adventure children">
+					<img class="book-cover" src="images/books/other/treasure-island.webp" alt="Treasure Island">
+				</div>
+				<div class="filterDiv sf">
+					<img class="book-cover" src="images/books/other/rendezvous-with-rama.webp" alt="Rendezvous with Rama">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/middlemarch.webp" alt="Middlemarch">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/little-prince.webp" alt="The Little Prince">
+				</div>
+				<div class="filterDiv sf humour">
+					<img class="book-cover" src="images/books/other/hitchhikers.webp" alt="The Hitchhiker's Guide to the Galaxy">
+				</div>
+				<div class="filterDiv NZ-authors">
+					<img class="book-cover" src="images/books/other/shredders.webp" alt="Shredders from Hell">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/tangled-hair.webp" alt="Tangled Hair">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/charlottes-web.webp" alt="Charlotte's Web">
+				</div>
+				<div class="filterDiv NZ-authors women">
+					<img class="book-cover" src="images/books/women/lagoon.webp" alt="The Lagoon">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/rory-branagan.webp" alt="Rory Branagan">
+				</div>
+				<div class="filterDiv NZ-authors women">
+					<img class="book-cover" src="images/books/women/carpathians.webp" alt="The Carpathians">
+				</div>
+				<div class="filterDiv NZ-authors women">
+					<img class="book-cover" src="images/books/women/wolfskin.webp" alt="Wolfskin">
+				</div>
+				<div class="filterDiv NZ-authors">
+					<img class="book-cover" src="images/books/other/soup-diaries.webp" alt="The Soup Diaries">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/secret-garden.webp" alt="The Secret Garden">
+				</div>
+				<div class="filterDiv classics">
+					<img class="book-cover" src="images/books/other/bell-tolls.webp" alt="For Whom the Bell Tolls">
+				</div>
+				<div class="filterDiv classics adventure">
+					<img class="book-cover" src="images/books/other/kidnapped.webp" alt="Kidnapped">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/to-kill-a-mockingbird.webp" alt="To Kill a Mockingbird">
+				</div>
+				<div class="filterDiv crime">
+					<img class="book-cover" src="images/books/other/thebigsleep.webp" alt="The Big Sleep">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/the-hollow.webp" alt="The Hollow">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/wind-in-the-willows.webp" alt="Wind in the Willows">
+				</div>
+				<div class="filterDiv humour">
+					<img class="book-cover" src="images/books/other/fearandloathing.webp" alt="Fear and Loathing in Las Vegas">
+				</div>
+				<div class="filterDiv crime classics">
+					<img class="book-cover" src="images/books/other/sherlockholmes.webp" alt="Sherlock Holmes">
+				</div>
+				<div class="filterDiv horror thriller">
+					<img class="book-cover" src="images/books/other/shining.webp" alt="The Shining">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/jamaica-inn.webp" alt="Jamaica Inn">
+				</div>
+				<div class="filterDiv children">
+					<img class="book-cover" src="images/books/children/everyone-poops.webp" alt="Everyone Poops">
+				</div>
+				<div class="filterDiv classic">
+					<img class="book-cover" src="images/books/other/quixote.webp" alt="Don Quixote">
+				</div>
+				<div class="filterDiv women">
+					<img class="book-cover" src="images/books/women/secret-history.webp" alt="Secret History">
+				</div>
+				<!-- End of Filter script -->				
+			</div>		
+			<div class="divider-bottom div-transparent"></div>
+		</main>
+		
+		<aside>
+			<div class="aside-title">
+				<h3 class="aside">We Buy Books</h3>
+			</div>			
+			<div class="aside-item">
+				<p>Do you have books you want to sell?</p>
+				<p>Bring in any books you would like to sell to our shop. We pay well for books that are in good condition and have good resale value.</p>
+				<p>We are especially interested in first edition or rare books.</p>
+				<p>See our <a href="valuations.html">valuations page</a> for more information.</p>				
+			</div>
+			<div class="item-border"></div>
+			<div class="aside-title">
+				<h3 class="aside">Books Wanted</h3>
+			</div>
+			<div class="aside-item"><ul>
+				<p>If you have any of the following books and would like to sell, give us a call for a valuation. We will pay top prices!</p>
+				<ul>
+					<li>Douglas Adams - Hitch Hiker's Guide to the Galaxy (First or Second Issue)</li>
+					<li>Ray Bradbury - Children's Titles</li>
+					<li>Terry Pratchett - Colour of Magic (First Edition)</li>
+					<li>Stephen King - Der Nebel</li>
+					<li>Aleister Crowley - Any first editions</li>
+					<li>C.S. Lewis - Any first editions</li>
+					<li>Dashiell Hammett - First editions</li>
+					<li>Mike Bennett - First editions</li>
+					<li>Edward G. Talbot - First editions</li>
+					<li>Seth Harwood - First editions</li>
+				</ul>
+			</div>
+		</aside>
+		
+		<footer>
+			<p class="small">&copy; Copyright 2022 Ye Olde Bookshop | <a href="privacy.html">Privacy Policy</a></p>
+		</footer>
+		
+		<!-- Filter script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements -->
+		<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("filterDiv");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+		</script>
+	</body>
+</html>
