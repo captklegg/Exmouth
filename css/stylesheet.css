@@ -604,7 +604,7 @@ h1, h2 {
 }
 	
 aside {
-	border: 1px solid #ccc;
+	border: none;
 }
 	
 .aside-title {
@@ -666,7 +666,8 @@ footer a {
 }
 
 aside {	
-	background: #e1ecff;
+	background: #fff;
+	border-left: 1px solid #ccc;
 }
 
 /* Contact form */
@@ -881,7 +882,6 @@ img {
 		grid-column: 2 / 3;
 		grid-row: 3 / 4;
 		background: #fff;
-		border: 1px solid #ccc;
     }
 	
 	.divider-bottom {
