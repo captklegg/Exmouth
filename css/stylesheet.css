@@ -111,7 +111,7 @@ nav {
 
 main {
 	margin-top: 0;
-	padding: 2em;
+	padding: 1em;
 }
 
 #contact-info {
@@ -160,7 +160,7 @@ main {
 }
 
 aside {
-	margin: 1em 0 2em;	
+	margin: 0;	
 	padding: 1em;
 }
 
@@ -845,7 +845,7 @@ img {
 	
     body {
 		display: grid;
-		grid-template-columns: 1fr  72rem 1fr;
+		grid-template-columns: 1fr  52rem 20rem 1fr;
     }
 	
 	header {
@@ -873,7 +873,7 @@ img {
     }
  
 	aside {
-		 grid-column: 2 / 3;
+		 grid-column: 3 / 4;
 		 grid-row: 3 / 4;
     }	
     
@@ -1032,6 +1032,7 @@ img {
 .parallax-wrapper {
   overflow-y: hidden;
   margin-top: 5em;
+  height: 400px;
 }
 
 .parallax {
@@ -1039,4 +1040,40 @@ img {
   background-size: cover;
   background-position: center;
   height: 400px;
+}
+
+/* https://codepen.io/Oddgson/pen/VPrYbv */
+
+.divider
+{
+	position: relative;
+	margin: 3em 0 4em;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-arrow-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: white;
+	border-bottom: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
 }
