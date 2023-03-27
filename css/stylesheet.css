@@ -46,6 +46,7 @@ nav, main, aside, footer {
 	background: #eee3da;
 	border-bottom: 1px solid #ccc;
 	display: flex;
+	justify-content: space-between;
 	transition: 0.5s;
 	position: fixed;
 	width: 100%;
@@ -97,7 +98,6 @@ nav {
 }
 
 #nav-logo {
-	width: 250px;
 	transition: 0.4s;
 }
 
@@ -597,7 +597,7 @@ nav {
 }
 
 h1, h2 {
-	color: rgb(53, 74, 114);
+	color: #354B72;
 }
 
 .banner {
@@ -762,8 +762,9 @@ img {
 		width: 250px;
 	}
 	
-	.nav-upper-image {
-		width: 200px;
+	.nav-right {
+		margin: 0.5em 0;
+		width: 250px;
 	}
 	
 	.nav-lower {
@@ -1077,4 +1078,23 @@ img {
 	background-color: white;
 	border-bottom: 1px solid rgb(48,49,51);
 	border-right: 1px solid rgb(48,49,51);
+}
+
+.book-now {
+	font-size: 1.25em;
+	font-weight: 700;
+	font-family: Poppins-Light;
+	background-color: #eee3da;
+	border: none;
+	color: #354B72;
+	padding: 1em 2em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 3em 0;
+	cursor: pointer;
+}
+
+.book-now:hover {
+	background: #000;
 }
