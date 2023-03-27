@@ -1084,9 +1084,9 @@ img {
 	font-size: 1.25em;
 	font-weight: 700;
 	font-family: Poppins-Light;
-	background-color: #eee3da;
-	border: none;
-	color: #354B72;
+	background-color: rgb(0,0,0,0.5);
+	border: 2px solid #eee3da;
+	color: #fff;
 	padding: 1em 2em;
 	text-align: center;
 	text-decoration: none;
