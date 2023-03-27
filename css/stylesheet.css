@@ -43,6 +43,7 @@ nav, main, aside, footer {
 }
 
 #nav-container {
+	background: #eee3da;
 	border-bottom: 1px solid #ccc;
 	display: flex;
 	transition: 0.5s;
@@ -565,7 +566,7 @@ input[type=text], select, textarea {
 /* COLOUR SCHEME & BORDERS */
 body {
 	color: #444;
-	background: #cba584;
+	background: #eee3da;
 }
 
 header {
@@ -574,7 +575,7 @@ header {
 }
 
 footer {
-	background-color: #cba584;
+	background-color: #eee3da;
 	color: #404040;
 }
 
