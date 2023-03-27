@@ -567,7 +567,7 @@ input[type=text], select, textarea {
 /* COLOUR SCHEME & BORDERS */
 body {
 	color: #444;
-	background: #f1f1f1;
+	background:   #354B72;
 }
 
 header {
@@ -576,8 +576,8 @@ header {
 }
 
 footer {
-	background-color: #fff;
-	color: #404040;
+	background-color:   #354B72;
+	color: #fff;
 }
 
 header {
