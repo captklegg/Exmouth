@@ -150,13 +150,14 @@ main {
 	background-image: url("../images/anstey.jpg");
 }
 .main-text-inner {
-	background: rgb(255,255,255,0.9);
+	background: rgb(0,0,0,0.4);
+	color: #fff;
 	width: 32em;
 	padding: 2em;
 	position: absolute;
 	margin: 2em;
 	min-height: 250px;
-	outline: #545453 solid 1px;
+	outline: #fff solid 1px;
      outline-offset: -10px;
 }
 
@@ -567,7 +568,7 @@ input[type=text], select, textarea {
 /* COLOUR SCHEME & BORDERS */
 body {
 	color: #444;
-	background:   #354B72;
+	background: #a8b9d7;
 }
 
 header {
@@ -576,8 +577,8 @@ header {
 }
 
 footer {
-	background-color:   #354B72;
-	color: #fff;
+	background-color: #a8b9d7;
+	color: #000;
 }
 
 header {
@@ -599,6 +600,10 @@ nav {
 
 h1, h2 {
 	color: #354B72;
+}
+
+.main-inner {
+	color: #fff;
 }
 
 .banner {
@@ -983,8 +988,8 @@ img {
      -moz-appearance: none;
           appearance: none;
   border: 0;
-  background: transparent;
-  color: #e55743;
+  background: #354B72;
+  color: #eee3da;
   font-family: Poppins-Light;
   text-transform: uppercase;
   letter-spacing: 0.20em;
@@ -997,7 +1002,7 @@ img {
   margin: 2em auto;
 }
 .button:hover {
-  background: rgba(100, 0, 0, 0.03);
+  background: rgba(100, 0, 0, 0.3);
 }
 .button__horizontal, .button__vertical {
   position: absolute;
