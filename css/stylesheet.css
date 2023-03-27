@@ -43,7 +43,7 @@ nav, main, aside, footer {
 }
 
 #nav-container {
-	background: #eee3da;
+	background: #fff;
 	border-bottom: 1px solid #ccc;
 	display: flex;
 	justify-content: space-between;
@@ -484,6 +484,7 @@ h1.banner {
 	font-family: Poppins-Light;
 	line-height: 2em;
 	padding-top: 1em;
+	text-shadow: 2px 2px #000;
 }
 	
 .showcase-heading {
@@ -566,7 +567,7 @@ input[type=text], select, textarea {
 /* COLOUR SCHEME & BORDERS */
 body {
 	color: #444;
-	background: #eee3da;
+	background: #f1f1f1;
 }
 
 header {
@@ -575,7 +576,7 @@ header {
 }
 
 footer {
-	background-color: #eee3da;
+	background-color: #fff;
 	color: #404040;
 }
 
@@ -663,7 +664,7 @@ footer a {
 }
 
 .selected, a:hover {
-	color: #ccc;
+	color: #333;
 }
 
 aside {	
@@ -873,17 +874,27 @@ img {
 	#lower-header {
 		height: 100px;
 		width: 100%;
-    }
- 
-	aside {
-		 grid-column: 3 / 4;
-		 grid-row: 3 / 4;
     }	
+	
+	#outer-wrap {
+		display: inline-grid;
+		grid-column: 2 / 4;
+		grid-row: 3 / 4;
+		margin: 0;
+		border: 2em solid #eee3da;
+	}
     
 	main {
 		grid-column: 2 / 3;
 		grid-row: 3 / 4;
 		background: #fff;
+		margin: 2em 0 2em 2em;
+    }
+ 
+	aside {
+		 grid-column: 3 / 4;
+		 grid-row: 3 / 4;
+		margin: 2em 2em 2em 0;
     }
 	
 	.divider-bottom {
@@ -1096,5 +1107,9 @@ img {
 }
 
 .book-now:hover {
-	background: #000;
+	background: #354B72;
+}
+
+a.book-now:hover {
+	color: #fff;
 }
