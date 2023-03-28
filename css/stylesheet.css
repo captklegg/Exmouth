@@ -43,7 +43,6 @@ nav, main, aside, footer {
 }
 
 #nav-container {
-	background: #fff;
 	border-bottom: 1px solid #ccc;
 	display: flex;
 	justify-content: space-between;
@@ -132,8 +131,8 @@ main {
 
 .main-text {
 	background-position: center;
-	border: 1px solid #ccc;
-	width: 62em;
+	border: 1em solid #ccc;
+	width: 66em;
 	height: 500px;
 	margin-bottom: 2em;
 }
@@ -147,8 +146,28 @@ main {
 }
 
 .main-text-3 {
-	background-image: url("../images/anstey.jpg");
+	background-image: url("../images/babbacombe-beach.webp");
 }
+
+.main-entry {
+	border: 2em solid #ccd7a8;
+	display: flex;
+	outline: #fff solid 1px;
+     outline-offset: -10px;
+	 margin-bottom: 6em;
+}
+
+.main-text-left {
+	background: #fff;
+	padding: 2em;
+	width: 36em;
+}
+
+.main-image-right {
+	padding: 1em;
+	width: 66em;
+}
+
 .main-text-inner {
 	background: rgb(0,0,0,0.4);
 	color: #fff;
@@ -266,67 +285,6 @@ hr.aside {
 	text-align: center;
     flex: 100%;
 }	
-
-/* Flexbox for new arrivals book cover images */
-.arrivals-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;	
-}
-
-.book-image {
-	display: inline-block;
-	margin: 0.25em;
-	padding: 0;
-	width: 100px;
-}
-	
-.book-image-wide {
-	display: inline-block;
-	margin: 0.25em;
-	padding: 0;
-	width: 200px;
-}
-
-.book-text {
-	vertical-align: top;
-	display: inline-block;
-	padding: 0 0.5em;
-	width: calc(100% - 115px);
-}
-	
-.book-text-wide {
-	vertical-align: top;
-	display: inline-block;
-	padding: 0 0.5em;
-	width: calc(100% - 215px);
-	margin-bottom: 2em;
-}
-
-#about-us-image {
-	margin: 0 auto;
-	width:300px;
-}
-	
-.aside-image {
-	margin: 0 auto;
-	width:80%;
-}
-
-#book-cover {
-	margin: 0 auto;
-	width:50%;
-	text-align: center;
-}
-
-.label-title {
-	font-weight: 700;
-}
-
-.form-spacing {
-	padding-bottom: 1em;
-}
 
 /* Video constant width/height */
 video {
@@ -484,8 +442,8 @@ h1.banner {
 	font-size: 3em;
 	font-family: Poppins-Light;
 	line-height: 2em;
-	padding-top: 1em;
-	text-shadow: 2px 2px #000;
+	padding-top: 3em;
+	text-shadow: 2px 2px rgb(0,0,0,0.5);
 }
 	
 .showcase-heading {
@@ -567,7 +525,7 @@ input[type=text], select, textarea {
 
 /* COLOUR SCHEME & BORDERS */
 body {
-	color: #444;
+	color: #333;
 	background: #a8b9d7;
 }
 
@@ -591,7 +549,7 @@ header {
 }
 
 nav {
-	background-color: #fff;
+	background-color: transparent;
 }
 
 nav {
@@ -603,7 +561,7 @@ h1, h2 {
 }
 
 .main-inner {
-	color: #fff;
+	color: #354B72;
 }
 
 .banner {
@@ -777,7 +735,7 @@ img {
 		align-items: center;
 		display: flex;
 		justify-content: center;
-		width: 71em;
+		width: 72em;
 	}
 	
 	header {
@@ -854,15 +812,14 @@ img {
 	
     body {
 		display: grid;
-		grid-template-columns: 1fr  52rem 20rem 1fr;
+		grid-template-columns: 1fr  100rem 1fr;
     }
 	
 	header {
-		height: 400px;
+		height: 960px;
 		grid-column: 1 / 6;
 		grid-row: 2 / 3;
 		justify-content: center;
-		margin-bottom: 1.5em;
 		padding: 0;
 		width: 100%;
     }	
@@ -883,17 +840,17 @@ img {
 	
 	#outer-wrap {
 		display: inline-grid;
-		grid-column: 2 / 4;
+		grid-column: 2 / 3;
 		grid-row: 3 / 4;
 		margin: 0;
-		border: 2em solid #eee3da;
+		border: 1px solid #ccc;
 	}
     
 	main {
 		grid-column: 2 / 3;
 		grid-row: 3 / 4;
 		background: #fff;
-		margin: 2em 0 2em 2em;
+		margin: 2em;
     }
  
 	aside {
@@ -1049,15 +1006,15 @@ img {
 
 .parallax-wrapper {
   overflow-y: hidden;
-  margin-top: 5em;
-  height: 400px;
+  margin-top: 0;
+  height: 960px;
 }
 
 .parallax {
-  background-image: url("../images/header-torquay.jpg");
+  background-image: url("../images/banner2.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 960px;
 }
 
 /* https://codepen.io/Oddgson/pen/VPrYbv */

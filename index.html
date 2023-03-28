@@ -51,13 +51,12 @@
 			</div>
 		</header>
 		
-		<div id="outer-wrap"></div>		
 			<main>
 				<div>
 					<h1>A Traditional Family Run Hotel</h1>
 					<div class="divider div-transparent div-arrow-down"></div>
 				</div>				
-				<div class="main-item">
+				<!--<div class="main-item">
 					<div class="main-text main-text-1">
 						<div class="main-text-inner">
 							<h2 class="main-inner">Exmouth View Hotel</h2>
@@ -99,9 +98,58 @@
 							</button>
 						</div>
 					</div>
-				</div>			
+				</div>	
+			-->
+			
+			<div class="main-entry">
+				<div class="main-text-left">
+					<h2 class="main-inner">Exmouth View Hotel</h2>
+					<p>Beautiful family ran hotel located on the Babbacombe Downs area of Torquay on the English Riviera, offering affordable accommodation with excellent quality home cooked food.</p>
+					<button class="button">
+						Book With Us
+						<div class="button__horizontal"></div>
+						<div class="button__vertical"></div>				
+					</button>				
+				</div>
+				<div class="main-image-right">
+					<img src="images/hotel-front.png">
+				</div>
+			</div>
+			
+			<div class="main-entry">
+				<div class="main-text-left">
+					<h2 class="main-inner">Come for a Relaxing Weekend!</h2>
+					<p>You will find our rooms comfy and our staff ready to meet your every need. 
+							You'll want to return again and again! It's your home, away from home!</p>
+					<button class="button">
+						Book With Us
+						<div class="button__horizontal"></div>
+						<div class="button__vertical"></div>				
+					</button>				
+				</div>
+				<div class="main-image-right">
+					<img src="images/hotel-room.png">
+				</div>
+			</div>
+			
+			<div class="main-entry">
+				<div class="main-text-left">
+					<h2 class="main-inner">Join us in Beautiful Babbacombe!</h2>
+					<p>Not only will you get to stay in a comfy hotel, there are also many different sites and attractions to see in the area. 
+							There is a beach behind the building where you can catch some sun and swim to your heart's desire.</p>
+					<button class="button">
+						Book With Us
+						<div class="button__horizontal"></div>
+						<div class="button__vertical"></div>				
+					</button>				
+				</div>
+				<div class="main-image-right">
+					<img src="images/babbacombe-beach.webp">
+				</div>
+			</div>
+			
 			</main>
-			<aside>
+			<!-- <aside>
 				<div class="aside-title">
 					<h3 class="aside">Stay with Us</h3>
 					<p>For information and bookings, please call or fax us. We look forward to hearing from you!</p>
@@ -116,7 +164,7 @@
 					</ul>
 				</div>				
 			</aside>	
-
+			-->
 
 		<footer>
 			<p class="small">&copy; Copyright 2023 Exmouth View Hotel</p>
@@ -156,9 +204,12 @@
 		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			document.getElementById("nav-logo").style.width = "120px";
 			document.getElementById("nav-container").style.height = "3em";
+			document.getElementById("nav-container").style.background = "#fff";
+			document.getElementById("topnav").color = "#fff";
 		  } else {
 			document.getElementById("nav-logo").style.width = "250px";
 			document.getElementById("nav-container").style.height = "5em";
+			document.getElementById("nav-container").style.background = "transparent";
 		  }
 		}
 	</script>
