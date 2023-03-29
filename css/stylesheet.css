@@ -154,7 +154,7 @@ main {
 	display: flex;
 	outline: #fff solid 1px;
      outline-offset: -10px;
-	 margin-bottom: 6em;
+	margin: 6em;
 }
 
 .main-text-left {
@@ -945,8 +945,8 @@ img {
      -moz-appearance: none;
           appearance: none;
   border: 0;
-  background: #354B72;
-  color: #eee3da;
+  background: #fff;
+  color: #354B72;
   font-family: Poppins-Light;
   text-transform: uppercase;
   letter-spacing: 0.20em;
@@ -959,7 +959,7 @@ img {
   margin: 2em auto;
 }
 .button:hover {
-  background: rgba(100, 0, 0, 0.3);
+  background: #ccd7a8;
 }
 .button__horizontal, .button__vertical {
   position: absolute;
