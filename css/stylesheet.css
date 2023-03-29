@@ -439,10 +439,9 @@ figcaption {
 }
 
 h1.banner {
-	font-size: 3em;
+	font-size: 4em;
 	font-family: Poppins-Light;
-	line-height: 2em;
-	padding-top: 3em;
+	padding-top: 2em;
 	text-shadow: 2px 2px rgb(0,0,0,0.5);
 }
 	
@@ -1057,7 +1056,7 @@ img {
 	font-size: 1.25em;
 	font-weight: 700;
 	font-family: Poppins-Light;
-	background-color: rgb(0,0,0,0.5);
+	background-color: #354B72;
 	border: 2px solid #eee3da;
 	color: #fff;
 	padding: 1em 2em;
@@ -1069,7 +1068,8 @@ img {
 }
 
 .book-now:hover {
-	background: #354B72;
+	background: #152136;
+	-webkit-transition: 1s;
 }
 
 a.book-now:hover {
