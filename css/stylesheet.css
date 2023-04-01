@@ -113,11 +113,6 @@ main {
 	justify-content: center;
 }
 
-.main-image {
-	width: 30em;
-	padding: 0;
-}
-
 .main-text {
 	background-position: center;
 	margin-bottom: 2em;
@@ -133,16 +128,15 @@ main {
 	width: 66em;
 }
 
+.interstitial {
+	margin: 1em 16em;
+}
+
 .article-item {
 	display: flex;
 	
 	margin: 6em;
 	justify-content: center;
-}
-
-.article-image {
-	width: 30em;
-	padding: 0;
 }
 
 .article-text {
@@ -152,12 +146,13 @@ main {
 
 .article-text-left {
 	padding: 2em;
-	width: 36em;
+	width: 66em;
 }
 
 .article-image-right {
-	padding: 1em;
-	width: 66em;
+	display: block;
+	padding: 6em 2em 2em;
+	width: 36em;
 }
 
 
@@ -305,18 +300,27 @@ figcaption {
 
 /* COLOUR SCHEME & BORDERS */
 
-#nav-container {
+#nav {
 	border-bottom: 1px solid #ccc;
+}
+
+.nav-bg-white {
+	background: #fff;
 }
 
 body {
 	color: #333;
 	background: #a8b9d7;
+	background-image: url(../images/bg-tiled.png);
 }
 
 header {
 	background-color: #fff;
 	color: #404040;
+}
+
+main {
+	border: 2px solid #ccc;
 }
 
 footer {

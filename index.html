@@ -28,7 +28,7 @@
 
 	<body>
 		
-		<nav id="nav-container">
+		<nav id="nav">
 			<div id="nav-left">
 				<img id="nav-logo" src="images/exmouth-logo.png">
 			</div>
@@ -53,9 +53,8 @@
 		
 		<main>
 			<h1>A Traditional Family Run Hotel</h1>
-			
-			<div class="divider div-transparent div-arrow-down"></div>
-		
+			<p class="interstitial">Offering affordable accommodations with high quality dining is of utmost importance here. You will find the best experience in Baccacombe, 
+			with our proximity to Torquay Beach and Bay.  With a licensed bar, family lounge, and game rooms, we provide fun for guests of all ages.	</p>		
 			<div class="item-article-border">
 				<div class="main-text-left">
 					<h2>Exmouth View Hotel</h2>
@@ -102,6 +101,13 @@
 					<img src="images/babbacombe-beach.webp">
 				</div>
 			</div>
+			<h3>WHAT OUR PATRONS SAY</h3>
+			<p class="interstitial">"Convivial company, fantastic food and drink. We had a thoroughly relaxing time. David and Milka and the team are the perfect 
+			hosts, always attentive to their guests needs and providing top value for money . We'll be back!" - John</p>
+			<p class="interstitial">"We have just returned from a fantastic 5 day T & T break. The hotel and the staff are great and so is the food, nothing is too 
+			much trouble, and Milka & Dave are the perfect hosts. The evening entertainments are good too." - Irene</p>
+			<p class="interstitial">"I had a good ol' time, although I don't remember much of it as I was on bit of a bender all weekend. In fact, I don't remember checking 
+			in, or out for that matter. Still, I highly recommend the place!" - Jason</p>
 			
 		</main>
 
@@ -142,13 +148,13 @@
 		function scrollFunction() {
 		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			document.getElementById("nav-logo").style.width = "120px";
-			document.getElementById("nav-container").style.height = "3em";
-			document.getElementById("nav-container").style.background = "#fff";
+			document.getElementById("nav").style.height = "3em";
+			document.getElementById("nav").style.background = "#fff";
 			document.getElementById("topnav").color = "#fff";
 		  } else {
 			document.getElementById("nav-logo").style.width = "250px";
-			document.getElementById("nav-container").style.height = "5em";
-			document.getElementById("nav-container").style.background = "transparent";
+			document.getElementById("nav").style.height = "5em";
+			document.getElementById("nav").style.background = "transparent";
 		  }
 		}
 	</script>
