@@ -33,21 +33,19 @@
 				<img id="nav-logo" src="images/exmouth-logo.png">
 			</div>
 			<div id="nav-middle">
-				<a href="index.html" class=" active">Home</a>
-				<a href="torquay-information.html">Torquay Information</a>
+				<a href="index.html">Home</a>
+				<a href="torquay-information.html" class="active">Torquay Information</a>
 				<a href="local-attractions.html">Local Attractions</a> 
 				<a href="christmas-break.html">Christmas Break</a>
 			</div>
 			<div id="nav-right">
 			</div>
-		</nav>        
+		</nav>    
 		
-		<header class="parallax-wrapper">
-			<div class="parallax">
-					<h1>Discover Spectacular Babbacombe</h1>
-					<div>
-						<a href="#" class="book-now">Book Your Stay</a>
-					</div>
+		<header class="banner">
+			<div>
+					<h1 class="main-banner">Torquay Information</h1>
+				<div><a href="#" class="book-now">Book Your Stay</a></div>
 			</div>
 		</header>
 		
@@ -57,7 +55,7 @@
 			<div class="divider div-transparent div-arrow-down"></div>
 		
 			<div class="item-article-border">
-				<div class="main-text-left">
+				<div class="article-text-left">
 					<h2>Exmouth View Hotel</h2>
 					<p>Beautiful family ran hotel located on the Babbacombe Downs area of Torquay on the English Riviera, offering affordable accommodation with excellent quality home cooked food.</p>
 					<button class="button">
@@ -66,13 +64,13 @@
 						<div class="button__vertical"></div>				
 					</button>				
 				</div>
-				<div class="main-image-right">
+				<div class="article-image-right">
 					<img src="images/hotel-front.png">
 				</div>
 			</div>
 			
 			<div class="item-article-border">
-				<div class="main-text-left">
+				<div class="article-text-left">
 					<h2>Come for a Relaxing Weekend!</h2>
 					<p>You will find our rooms comfy and our staff ready to meet your every need. 
 							You'll want to return again and again! It's your home, away from home!</p>
@@ -82,13 +80,13 @@
 						<div class="button__vertical"></div>				
 					</button>				
 				</div>
-				<div class="main-image-right">
+				<div class="article-image-right">
 					<img src="images/hotel-room.png">
 				</div>
 			</div>
 			
 			<div class="item-article-border">
-				<div class="main-text-left">
+				<div class="article-text-left">
 					<h2>Join us in Beautiful Babbacombe!</h2>
 					<p>Not only will you get to stay in a comfy hotel, there are also many different sites and attractions to see in the area. 
 							There is a beach behind the building where you can catch some sun and swim to your heart's desire.</p>
@@ -98,7 +96,7 @@
 						<div class="button__vertical"></div>				
 					</button>				
 				</div>
-				<div class="main-image-right">
+				<div class="article-image-right">
 					<img src="images/babbacombe-beach.webp">
 				</div>
 			</div>
@@ -106,34 +104,8 @@
 		</main>
 
 		<footer>
-			<p>&copy; Copyright 2023 Exmouth View Hotel</p>
-		</footer>	
-		
-		<script>
-			// Parallax effect
-			// Adapted from @ilonacodes article ->  https://link.medium.com/7fFiON6Q1X
-
-			// Update : added throttle to increase performance
-			window.addEventListener("scroll", throttle(parallax, 14));
-
-			function throttle(fn, wait) {
-			  var time = Date.now();
-			  return function () {
-				if (time + wait - Date.now() < 0) {
-				  fn();
-				  time = Date.now();
-				}
-			  };
-			}
-
-			function parallax() {
-			  var scrolled = window.pageYOffset;
-			  var parallax = document.querySelector(".parallax");
-			  // You can adjust the 0.4 to change the speed
-			  var coords = scrolled * 0.4 + "px";
-			  parallax.style.transform = "translateY(" + coords + ")";
-			}
-	</script>
+			<p class="small">&copy; Copyright 2023 Exmouth View Hotel</p>
+		</footer>
 	
 	<script>
 		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -143,12 +115,10 @@
 		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			document.getElementById("nav-logo").style.width = "120px";
 			document.getElementById("nav-container").style.height = "3em";
-			document.getElementById("nav-container").style.background = "#fff";
-			document.getElementById("topnav").color = "#fff";
 		  } else {
 			document.getElementById("nav-logo").style.width = "250px";
 			document.getElementById("nav-container").style.height = "5em";
-			document.getElementById("nav-container").style.background = "transparent";
+			document.getElementById("nav-container").style.background = "#fff";
 		  }
 		}
 	</script>
