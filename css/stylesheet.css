@@ -125,7 +125,7 @@ header {
 }
 
 .interstitial {
-	margin: 1em 16em;
+	margin: 1em 20em 2em;
 }
 
 .article-item {
@@ -141,7 +141,7 @@ header {
 }
 
 .article-text-left {
-	padding: 2em;
+	padding: 2em 4em;
 	width: 66em;
 }
 
@@ -306,8 +306,7 @@ figcaption {
 
 body {
 	color: #333;
-	background: #a8b9d7;
-	background-image: url(../images/bg-tiled.png);
+	background: #fdeee0;
 }
 
 header {
@@ -315,16 +314,12 @@ header {
 	color: #404040;
 }
 
-main {
-	border: 2px solid #ccc;
-}
-
 footer {
 	color: #000;
 }
 
 h1, h2 {
-	color: #354B72;
+	color: #333;
 }
 
 .main-text-left {
@@ -336,9 +331,7 @@ h1, h2 {
 }
 
 .item-article-border {
-	border: 2em solid #ccd7a8;
-	outline: #fff solid 1px;
-     outline-offset: -10px;
+	border: 1px solid #ccc;
 }
 
 .main-text-inner {
