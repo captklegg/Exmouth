@@ -210,7 +210,11 @@ img {
 
 .attractions {
 	width: 500px;
-	margin: 2em auto;
+	margin: 2em auto 0;
+}
+
+figcaption {
+	margin-bottom: 3em;
 }
 
 /* TYPOGRAPHY */
