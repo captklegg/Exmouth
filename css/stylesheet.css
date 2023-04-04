@@ -305,7 +305,6 @@ ul {
 	font-size: 1.25em;
 	font-weight: 700;
 	font-family: Poppins-Light;
-	text-align: center;
 	text-decoration: none;
 }
 
@@ -381,24 +380,31 @@ header h1 {
 	color: white;
 }
 
-
 .book-now {
 	color: #fff;	
 	background-color: #354B72;
 	border: 4px solid #eee3da;
 	padding: 1em 2em;
 	text-align: center;
-	text-decoration: none;
 	display: inline-block;
 	margin: 3em 0;
 	cursor: pointer;
 	-webkit-transition: 0.5s;
 }
 
+.book-now a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .book-now:hover {
 	background-color: #000;
 	color: #fff;
 	-webkit-transition: 0.5s;
+}
+
+.book-now a:hover {
+	color: #fff;
 }
 
 footer a {
