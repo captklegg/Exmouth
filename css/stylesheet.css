@@ -59,6 +59,18 @@ aside {
 	grid-row: 4 / 5;
 	margin: 2em 2em 2em 0;
 }
+
+#intro {
+	padding: 1em;
+	width: 48rem;
+	margin: 0 auto 3em;
+}
+
+#testimonials {
+	display: flex;
+	justify-content: center;
+	margin: 4em 0;
+}
 	
 footer {
 	grid-column: 1 / 6;
@@ -75,12 +87,7 @@ body {
 	
 #nav-left {
 	margin: 0.5em 1em;
-	width: 250px;
-}
-	
-#nav-right {
-	margin: 0.5em 0;
-	width: 250px;
+	width: 220px;
 }
 	
 #nav-middle {
@@ -88,6 +95,19 @@ body {
 	display: flex;
 	justify-content: center;
 	width: 72em;
+}
+	
+#nav-right {	
+	display: flex;
+	justify-content: center;
+	margin: 0.5em 1em;
+	width: 220px;
+}
+
+#navsurround {
+	background: #fff;
+	border-radius: 20px;
+	padding: 5px;
 }
 	
 header {
@@ -101,6 +121,24 @@ header {
 	grid-row: 3 / 4;
 	height: 500px;
 	background-image: url("../images/torquay-banner.jpg");
+}
+
+.banner-info {
+	grid-row: 3 / 4;
+	height: 500px;
+	background-image: url("../images/torquay-information.jpg");
+}
+
+.banner-attractions {
+	grid-row: 3 / 4;
+	height: 500px;
+	background-image: url("../images/torquay-attractions.jpg");
+}
+
+.banner-xmas {
+	grid-row: 3 / 4;
+	height: 500px;
+	background-image: url("../images/christmas-break.jpg");
 }
 
 .main-article-border {
@@ -120,18 +158,25 @@ header {
 	margin-bottom: 2em;
 }
 
+.main-text-right {
+	margin-left: 1em;
+	padding: 2em;
+	width: 36em;
+}
+
 .main-text-left {
+	margin-right: 1em;
 	padding: 2em;
 	width: 36em;
 }
 
 .main-image-right {
-	padding: 1em;
+	padding: 0;
 	width: 66em;
 }
 
 .interstitial {
-	margin: 1em 20em 2em;
+	margin: 1em 20em 5em;
 }
 
 .article-item {
@@ -151,7 +196,6 @@ header {
 }
 
 .article-image-right {
-	outline: 1px solid #ccc;
 	display: block;
 	padding: 2em;
 	margin-top: 2em;
@@ -183,12 +227,21 @@ nav a {
 	transition: 0.4s;
 }
 
+#nav-button {
+	transition: 0.4s;
+}
+
 .book-now {
 	padding: 1em 2em;
 	display: inline-block;
 	margin: 3em 0;
 	cursor: pointer;
 	-webkit-transition: 0.5s;
+}
+
+.book-now-link {
+	display: flex;
+	justify-content: center;
 }
 
 footer {
@@ -218,15 +271,20 @@ img {
 	margin: 1em auto 0;
 }
 
-figcaption {
-	margin-bottom: 3em;
+.fancy-divider {
+	margin: 1.5em auto;
+	width: 150px;
+}
+
+#book-button {
+	
 }
 
 /* TYPOGRAPHY */
 
 @font-face {
-   font-family: Poppins-Light;
-   src: url(../fonts/Poppins-Light.ttf);
+   font-family: BwDarius-Light;
+   src: url(../fonts/BwDarius-Light.otf);
 }
 
 @font-face {
@@ -244,12 +302,12 @@ header, footer {
 	text-align: center;
 }
 	
-h1, h2, h3 {
+h1, h2 {
 	text-align: center;
 }
 
 h1, h2, h3, dropdown, dropbtn, nav, footer {
-	font-family: Poppins-Light, sans-serif;
+	font-family: BwDarius-Light, sans-serif;
 	font-weight: bold;
 }
 
@@ -259,8 +317,8 @@ h1 {
 
 header h1 {
 	font-size: 4em;
-	font-family: Poppins-Light;
-	padding-top: 2em;
+	font-family: BwDarius-Light;
+	padding-top: 3em;
 	text-shadow: 2px 2px rgb(0,0,0,0.5);
 }
 
@@ -294,7 +352,7 @@ nav a {
 }
 
 nav a:hover {
-	text-decoration: underline;;
+	text-decoration: underline;
 }
 
 ul {
@@ -304,7 +362,7 @@ ul {
 .book-now {
 	font-size: 1.25em;
 	font-weight: 700;
-	font-family: Poppins-Light;
+	font-family: BwDarius-Light;
 	text-decoration: none;
 }
 
@@ -317,7 +375,7 @@ li {
 }
 	
 figcaption {
-	margin-bottom: 1em;
+	margin-bottom: 3em;
 	text-align: center;
 }
 
@@ -333,11 +391,7 @@ figcaption {
 
 body {
 	color: #333;
-	background: #fdeee0;
-}
-
-main {
-	border: 1px solid #ccc;
+	background: #fff;
 }
 
 header {
@@ -349,12 +403,20 @@ footer {
 	color: #000;
 }
 
-h1, h2 {
+h1 {
 	color: #333;
 }
 
-.main-text-left {
-	background: #fff;
+h2 {
+	color: #2681AA;
+}
+
+.main-text-left, .main-text-right {
+	background: #E8EEF8;
+}
+
+.main-image-right {
+	background: none;
 }
 
 .main-text {
@@ -362,7 +424,7 @@ h1, h2 {
 }
 
 .main-article-border {
-	outline: 1px solid #ccc;
+	outline: none;
 }
 
 .page-article-border {
@@ -423,12 +485,12 @@ aside {
 
 /* CODE FROM OUTSIDE SOURCES */
 /* Nav menu from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
-nav {
+.nav {
 	overflow: hidden;
 	z-index: 99;
 }
 
-nav a {
+.nav {
 	float: left;
 	display: block;
 	color: #333;
@@ -438,12 +500,8 @@ nav a {
 	font-size: 1em;
 }
 
-nav a:hover {
-	text-decoration: underline;
-}
-
-nav a.active {
-	color: #5A82C0;
+a.active {
+	color: #2681AA;
 }
 
 .btn {
@@ -479,7 +537,7 @@ nav a.active {
   border: 0;
   background: #fff;
   color: #354B72;
-  font-family: Poppins-Light;
+  font-family: BwDarius-Light;
   text-transform: uppercase;
   letter-spacing: 0.20em;
   outline: none;
@@ -491,7 +549,7 @@ nav a.active {
   margin: 2em auto;
 }
 .button:hover {
-  background: #d3d9e2;
+  background: #fff;
 }
 .button__horizontal, .button__vertical {
   position: absolute;
@@ -810,5 +868,130 @@ nav a.active {
   100% {
     opacity: 0;
     transform: scale(0.8);
+  }
+}
+
+/* Quote testimonials */
+/* https://codepen.io/Kerrys7777/pen/eYNGxow */
+.quote-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  /*BLUE BG*/
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 128, 172, 1) 0%,
+    rgba(0, 128, 172, 1) 70%,
+    rgba(0, 128, 172, 0) 70.3%
+  );
+ 
+  position: relative;
+  margin: 0;
+  color: white;
+}
+
+.text p {
+  height: 100%;
+  font-size: 1em;
+  line-height: 1.25;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    0 0,
+    98% 0,
+    50% 6%,
+    23.4% 17.3%,
+    6% 32.6%,
+    0 50%,
+    6% 65.6%,
+    23.4% 82.7%,
+    50% 94%,
+    98% 100%,
+    0 100%
+  );
+  shape-margin: 7%;
+}
+
+/* Testimonial quote */
+/* https://codepen.io/Kerrys7777/pen/eYNGxow */
+
+.text p::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: right;
+  shape-outside: polygon(
+    2% 0%,
+    100% 0%,
+    100% 100%,
+    2% 100%,
+    50% 94%,
+    76.6% 82.7%,
+    94% 65.6%,
+    100% 50%,
+    94% 32.6%,
+    76.6% 17.3%,
+    50% 6%
+  );
+  shape-margin: 7%;
+}
+
+.quote-wrapper blockquote footer {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  font-size: 17px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.quote-wrapper::before {
+  content: "\201C";
+  font-size: 200px;
+  height: 62px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+@media (min-width: 850px) {
+  .quote-wrapper {
+    width: 300px;
+    height: 300px;
+    margin: 1.5em;
+  }
+
+  .quote-wrapper::before {
+    font-size: 300px;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+
+  .quote-wrapper blockquote footer {
+    bottom: 1em;
+	color: #fff;
   }
 }

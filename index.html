@@ -30,30 +30,35 @@
 		
 		<nav id="nav">
 			<div id="nav-left">
-				<img id="nav-logo" src="images/exmouth-logo.png">
-			</div>
+				<img id="nav-logo" src="images/evh-logo.png">
+			</div>			
 			<div id="nav-middle">
-				<a href="index.html" class=" active">Home</a>
-				<a href="torquay-information.html">Torquay Information</a>
-				<a href="local-attractions.html">Local Attractions</a> 
-				<a href="christmas.html">Christmas Break</a>
+				<div id="navsurround">
+					<a class="nav active" href="#">Home</a>
+					<a class="nav" href="torquay-information.html">Torquay Information</a>
+					<a class="nav" href="local-attractions.html">Local Attractions</a> 
+					<a class="nav" href="christmas.html">Christmas Break</a>
+				</div>
 			</div>
 			<div id="nav-right">
+					<a href="#" class="book-now-link"><img id="nav-button" src="images/book-now-nav.png"></a>
 			</div>
 		</nav>        
 		
 		<header class="parallax-wrapper">
 			<div class="parallax">
 					<h1>Discover Spectacular Babbacombe</h1>
-					<button class="book-now" name="book">
-						<a href="#">Book Your Stay</a>
-					</button>
 			</div>
 		</header>
 		
 		<main>
 			<h1>A Traditional Family Run Hotel</h1>
-			<p class="interstitial">Offering affordable accommodations with high quality dining is of utmost importance here. You will find the best experience in Baccacombe, 
+			
+			<div class="fancy-divider">
+				<img src="images/fancy-divider.png">
+			</div>
+			
+			<p id="intro">Offering affordable accommodations with high quality dining is of utmost importance here. You will find the best experience in Baccacombe, 
 			with our proximity to Torquay Beach and Bay.  With a licensed bar, family lounge, and game rooms, we provide fun for guests of all ages.	</p>		
 			<div class="main-article-border">
 				<div class="main-text-left">
@@ -66,12 +71,15 @@
 					</button>				
 				</div>
 				<div class="main-image-right">
-					<img src="images/hotel-front.png">
+					<img src="images/hotel-view.jpg">
 				</div>
 			</div>
 			
 			<div class="main-article-border">
-				<div class="main-text-left">
+				<div class="main-image-right">
+					<img src="images/hotel-room.png">
+				</div>
+				<div class="main-text-right">
 					<h2>Come for a Relaxing Weekend!</h2>
 					<p>You will find our rooms comfy and our staff ready to meet your every need. 
 							You'll want to return again and again! It's your home, away from home!</p>
@@ -80,9 +88,6 @@
 						<div class="button__horizontal"></div>
 						<div class="button__vertical"></div>				
 					</button>				
-				</div>
-				<div class="main-image-right">
-					<img src="images/hotel-room.png">
 				</div>
 			</div>
 			
@@ -98,15 +103,35 @@
 					</button>				
 				</div>
 				<div class="main-image-right">
-					<img src="images/babbacombe-beach.webp">
+					<img src="images/babbacombe-beach.jpg">
 				</div>
 			</div>
 			<h3>WHAT OUR PATRONS SAY</h3>
-			<p class="interstitial">"Convivial company, fantastic food and drink. We had a thoroughly relaxing time. David and Milka and the team are the perfect 
-			hosts, always attentive to their guests needs and providing top value for money . We'll be back!" - John</p>
-			<p class="interstitial">"We have just returned from a fantastic 5 day T & T break. The hotel and the staff are great and so is the food, nothing is too 
-			much trouble, and Milka & Dave are the perfect hosts. The evening entertainments are good too." - Irene</p>
-			
+			<div id="testimonials">				
+				<div class="quote-wrapper">
+					<blockquote class="text" cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+						<p>Convivial company, fantastic food and drink. We had a thoroughly relaxing time. David and Milka and the team are the perfect 
+						hosts, always attentive to their guests needs and providing top value for money . We'll be back!</p>
+						<footer>– John</footer>
+					</blockquote>
+				</div>		
+				<div class="quote-wrapper">
+					<blockquote class="text" cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+						<p>We have just returned from a fantastic 5 day T & T break. The hotel and the staff are great and so is the food, nothing is too 
+					much trouble, and Milka & Dave are the perfect hosts. The evening entertainments are good too.</p>
+						<footer>– Irene</footer>
+					</blockquote>
+				</div>
+				<div class="quote-wrapper">
+					<blockquote class="text" cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+						<p>I stayed with Dave and Milka for the 4th time and always enjoy being there. If you´re looking for a warm welcome, great food and 
+						the friendliest hosts you can imagine you're at the right place.
+						I'll definitely be back!</p>
+						<footer>– Angus</footer>
+					</blockquote>
+				</div>
+			</div>
+
 		</main>
 
 		<footer>
@@ -146,13 +171,16 @@
 		function scrollFunction() {
 		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			document.getElementById("nav-logo").style.width = "120px";
+			document.getElementById("nav-button").style.width = "120px";
 			document.getElementById("nav").style.height = "3em";
 			document.getElementById("nav").style.background = "#fff";
 			document.getElementById("topnav").color = "#fff";
 		  } else {
-			document.getElementById("nav-logo").style.width = "250px";
+			document.getElementById("nav-logo").style.width = "220px";
+			document.getElementById("nav-button").style.width = "220px";
 			document.getElementById("nav").style.height = "5em";
 			document.getElementById("nav").style.background = "transparent";
+			document.getElementById("nav-button").style.margin = "0";
 		  }
 		}
 	</script>

@@ -30,29 +30,31 @@
 		
 		<nav id="nav" class=" nav-bg-white ">
 			<div id="nav-left">
-				<img id="nav-logo" src="images/exmouth-logo.png">
+				<img id="nav-logo" src="images/evh-logo.png">
 			</div>
 			<div id="nav-middle">
-				<a href="index.html">Home</a>
-				<a href="torquay-information.html">Torquay Information</a>
-				<a href="local-attractions.html">Local Attractions</a> 
-				<a href="#" class="active">Christmas Break</a>
+				<a class="nav" href="index.html">Home</a>
+				<a class="nav" href="torquay-information.html">Torquay Information</a>
+				<a class="nav" href="local-attractions.html">Local Attractions</a> 
+				<a class="nav active" href="#">Christmas Break</a>
 			</div>
 			<div id="nav-right">
+					<a href="#" class="book-now-link"><img id="nav-button" src="images/book-now-nav.png"></a>
 			</div>
-		</nav>    
+		</nav>       
 		
-		<header class="banner">
+		<header class="banner-xmas">
 			<div>
 				<h1 class="main-banner">Merry Christmas</h1>
-				<button class="book-now" name="book christcmas">
-					<a href="#">Book Your X'mas Stay</a>
-				</button>
 			</div>
 		</header>
 		
 		<main>
 			<h1>Christmas Break 2023</h1>
+			
+			<div class="fancy-divider">
+				<img src="images/fancy-divider.png">
+			</div>
 		
 			<div class="page-article-border">
 				<div class="article-text-left">
@@ -114,8 +116,6 @@
 				</div>
 				
 				<div class="article-image-right">
-					<h3>Christmas Break Gallery</h3>
-					<p>Photos from past Christmas break events.</p>
 					<figure class="christmas-image">
 						<img src="images/christmas/Xmas2004(1).jpg" alt="Christmas 2004">
 					</figure>
@@ -148,10 +148,14 @@
 		function scrollFunction() {
 		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			document.getElementById("nav-logo").style.width = "120px";
+			document.getElementById("nav-button").style.width = "120px";
+			document.getElementById("nav-button").style.margin = "0";
 			document.getElementById("nav").style.height = "3em";
 		  } else {
-			document.getElementById("nav-logo").style.width = "250px";
+			document.getElementById("nav-logo").style.width = "220px";
 			document.getElementById("nav").style.height = "5em";
+			document.getElementById("nav-button").style.width = "220px";
+			document.getElementById("nav-button").style.margin = "0";
 		  }
 		}
 	</script>
