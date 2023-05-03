@@ -23,7 +23,8 @@
 		<link rel="manifest" href="images/favicon/site.webmanifest"> 	
 
 		<!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-		<script src="js/topnav.js"></script>		
+		<script src="js/topnav.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>		
 	</head>
 
 	<body>
@@ -96,7 +97,11 @@
 							<label for="phone">Phone</label>
 						</div>
 						<div class="form-item">
-							<input type="text" name="phone" id="phone" placeholder="Your phone number...">
+							<input id="phone" type="tel" name="phone" />
+							<input type="submit" class="btn" value="Verify" />
+
+							<div class="alert alert-info" style="display: none"></div>
+							<div class="alert alert-error" style="display: none"></div>
 						</div>
 					</div>
 					<div>
@@ -216,5 +221,24 @@
 	</script>
 	
 	</body>
+	<script>
+		const phoneInputField = document.querySelector("#phone");
+		const phoneInput = window.intlTelInput(phoneInputField, {
+		  utilsScript:
+			"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+		});
+
+		const info = document.querySelector(".alert-info");
+		const error = document.querySelector(".alert-error");
+
+		function process(event) {
+		  event.preventDefault();
+
+		  const phoneNumber = phoneInput.getNumber();
+
+		  info.style.display = "";
+		  info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+		}
+  </script>
 
 </html>
