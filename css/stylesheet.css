@@ -1058,6 +1058,18 @@ input[type=text], select {
   -webkit-transition: 0.5s;
 }
 
+input[type=tel], select {
+  width: 20em;
+  font-family: 'Muli', sans-serif;
+  padding: 0.8em 1em;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+}
+
 input[type=textwide], select {
   width: 32em;
   background: #fff;
