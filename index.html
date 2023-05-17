@@ -53,15 +53,38 @@
 			</div>
 		</header>
 		
-		<main>
+		<main class="demo2">
 			<h1>A Traditional Family Run Hotel</h1>
 			
 			<div class="fancy-divider">
 				<img src="images/fancy-divider.png" alt="divider">
 			</div>
 			
-			<p id="intro">Offering affordable accommodations with high quality dining is of utmost importance here. You will find the best experience in Baccacombe, 
-			with our proximity to Torquay Beach and Bay.  With a licensed bar, family lounge, and game rooms, we provide fun for guests of all ages.	</p>		
+		
+			<div class="demo">
+			  <div>
+				<table class="lang">
+				  <tr>
+					<td class="tdlang">
+					  <span id="en" class="button_lang current_lang">EN</span>
+					</td>
+					<td class="tdlang"><span id="ma" class="button_lang demo">Maori</span></td>
+					<td class="tdlang toggle"><span class="button_lang">Contrast</span></td>
+					<td class="tdlang hidden"><span id="jp" class="button_lang">日本語</span></td>
+					<button class="add hidden">Add Class</button>
+					<button class="remove hidden">Remove Class</button>	
+				  </tr>
+				</table>
+				<div class="translation english" id="translate" style="width: 60%;margin:0 auto;">
+				  Offering affordable accommodations with high quality dining is of utmost importance here. You will find the best experience in Baccacombe, with our proximity to Torquay Beach and Bay.  With a licensed bar, family lounge, and game rooms, we provide fun for guests of all ages.
+				</div>
+			  </div>
+			</div>
+			
+
+				<!-- <p id="intro">Offering affordable accommodations with high quality dining is of utmost importance here. You will find the best experience in Baccacombe, 
+			with our proximity to Torquay Beach and Bay.  With a licensed bar, family lounge, and game rooms, we provide fun for guests of all ages.</p> -->
+
 			<div class="main-article-border">
 				<div class="main-text-left">
 					<h2>Exmouth View Hotel</h2>
@@ -70,7 +93,8 @@
 						Book With Us
 						<div class="button__horizontal"></div>
 						<div class="button__vertical"></div>				
-					</button>				
+					</button>	
+									
 				</div>
 				<div class="main-image-right">
 					<img src="images/hotel-view.jpg" alt="View from hotel">
@@ -190,6 +214,101 @@
 			document.getElementById("nav-button").style.margin = "0";
 		  }
 		}
+	</script>
+	
+	<script>
+		var english = document.getElementById("en"),
+	  japanese = document.getElementById("jp"),
+	  maori = document.getElementById("ma"),
+	  change_text = document.getElementById("translate");
+	// declare some variables to catch the various HTML elements
+
+	english.addEventListener(
+	  "click",
+	  function () {
+		change(english, japanese, maori);
+	  },
+	  false
+	);
+	// add an event listener to listen to when the user clicks on one of the language span tags
+	// this triggers our custom "change" function, which we will define later
+
+	japanese.addEventListener(
+	  "click",
+	  function () {
+		change(japanese, english, maori);
+	  },
+	  false
+	);
+
+	maori.addEventListener(
+	  "click",
+	  function () {
+		change(maori, english, japanese);
+	  },
+	  false
+	);
+
+	function change(lang_on, lang_off1, lang_off2) {
+	  if (!lang_on.classList.contains("current_lang")) {
+		// if the span that the user clicks on does not have the "current_lang" class
+		lang_on.classList.add("current_lang");
+		// add the "current_lang" class to it
+		lang_off1.classList.remove("current_lang");
+		lang_off2.classList.remove("current_lang");
+		// remove the "current_lang" class from the other span
+	  }
+
+	  if (lang_on.innerHTML == "EN") {
+		change_text.classList.add("english");
+		change_text.classList.remove("maori");
+		change_text.classList.remove("japanese");
+		change_text.innerHTML = "Offering affordable accommodations with high quality dining is of utmost importance here. You will find the best experience in Baccacombe, with our proximity to Torquay Beach and Bay.  With a licensed bar, family lounge, and game rooms, we provide fun for guests of all ages.";
+	  } else if (lang_on.innerHTML == "Maori") {
+		change_text.classList.add("maori");
+		// first line adds the corrent language class to the text
+		change_text.classList.remove("english");
+		// second and third line removes the other language classes
+		// this allows you to apply CSS that is specific to each language
+		change_text.classList.remove("japanese");
+		change_text.innerHTML = "He tino hiranga i konei te whakarato i nga nohonga utu ōrau me te kai tino kounga. Ka kitea e koe te wheako tino pai i Baccacombe, me to mātau tatanga atu ki Te One o Torquay me Bay. Mā tētahi pae raihana, te whare whānau, me ngā rūma kēmu, ka homai e mātau he ngahau mō ngā manuhiri o ngā pakeke katoa.";
+		// fourth line is where you key in the text that will replace what is currently on-screen
+	  } else if (lang_on.innerHTML == "日本語") {
+		change_text.classList.add("japanese");
+		change_text.classList.remove("english");
+		change_text.classList.remove("maori");
+		change_text.innerHTML = "ここの文字は変わります";
+	  }
+	}
+
+	</script>
+	
+	<!-- Toggle class -->
+	
+	<script>
+	const buttonAdd = document.querySelector(".add");
+	buttonAdd.addEventListener("click", addClass);
+
+	const buttonRemove = document.querySelector(".remove");
+	buttonRemove.addEventListener("click", removeClass);
+
+	const buttonToggle = document.querySelector(".toggle");
+	buttonToggle.addEventListener("click", toggleClass);
+
+	function addClass() {
+	  const element = document.querySelector(".demo2");
+	  element.classList.add("new-class");
+	}
+
+	function removeClass() {
+	  const element = document.querySelector(".demo2");
+	  element.classList.remove("new-class");
+	}
+
+	function toggleClass() {
+	  const element = document.querySelector(".demo2");
+	  element.classList.toggle("new-class");
+	}
 	</script>
 					
 	</body>

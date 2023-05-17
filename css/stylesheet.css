@@ -1201,3 +1201,102 @@ input[type=submit]:hover {
   border-color: #fff;
   transition: all 0.1s ease-in-out;
 }
+
+/* Translate */
+.lang {
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_lang {
+  border: 1px solid #000;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.25em 0em;
+  border-radius: 10px;
+  width: 6em;
+  transition: 0.25s ease;
+}
+
+.button_lang:hover {
+  background: black;
+  border: 1px solid #000;
+  color: white;
+  transition: 0.25s ease;
+}
+
+.current_lang {
+  background: white;
+}
+
+.translation {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Toggle class */
+.demo2 {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.new-class {
+	color: white;
+    background: black;
+}
+
+.new-class h1 {
+	color: white;
+}
+
+.new-class h2 {
+	color: black;
+}
+
+.new-class p {
+	color: black;
+	font-size: 1.2rem;
+}
+
+.new-class #translate {
+	font-size: 1.2rem;
+}
+
+.new-class .text {
+	background: white;
+}
+
+.new-class .main-text-left, .main-text-right {
+	background: #fff;
+}
+
+.new-class .button_lang {
+  background: black;
+  border: 1px solid #ccc;
+  color: white;
+  transition: 0.25s ease;
+}
+
+.new-class .button_lang:hover {
+  background: white;
+  border: 1px solid #ccc;
+  color: black;
+  transition: 0.25s ease;
+}
+
+.new-class .button {
+	color: black;
+	font-size: 1.1rem;
+}
+
+.t-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
