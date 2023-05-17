@@ -1204,7 +1204,7 @@ input[type=submit]:hover {
 
 /* Translate */
 .lang {
-  margin: 2rem auto;
+  margin: 1rem auto 3rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1299,4 +1299,8 @@ input[type=submit]:hover {
 .t-button {
   padding: 10px 20px;
   font-size: 1.2em;
+}
+
+.centre {
+	text-align: center;
 }
