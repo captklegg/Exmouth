@@ -1266,7 +1266,7 @@ input[type=submit]:hover {
 }
 
 .new-class #translate {
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 .new-class .text {
@@ -1293,10 +1293,12 @@ input[type=submit]:hover {
 
 .new-class .button {
 	color: black;
+	font-size: 1.1rem;
 }
 
 .t-button {
   padding: 10px 20px;
+  font-size: 1.2em;
 }
 
 .centre {
